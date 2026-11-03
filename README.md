@@ -1,14 +1,16 @@
-# Drosophila VR with FicTrac 2.1.1
+# Drosophila VR with FicTrac 2.1.1: 360-Second Protocol
 
 A Windows-based experiment system for a tethered fly on a spherical treadmill. It receives FicTrac tracking data over UDP, displays visual stimuli on a U-shaped screen, and records behavior and trajectories.
+
+This repository preserves the original 18-state protocol for the thesis version: 20 seconds per state, approximately 360 seconds per run, and `VIRTUAL_WALL_DISTANCE_CM = 10.0`. It is maintained separately from the [single-condition 20-second version](https://github.com/renatirudy246-maker/drosophila-vr-fictrac). The protocol is preserved from commit `ddc5c803bd0fd435749e90780b27517d8378dde1`, with the virtual-wall parameter restored to 10.0 cm. Historical experiment data are not modified or included.
 
 ## Setup
 
 Use Python 3.9-3.11 with a compatible camera and display.
 
 ```powershell
-git clone https://github.com/renatirudy246-maker/drosophila-vr-fictrac.git
-cd drosophila-vr-fictrac
+git clone https://github.com/renatirudy246-maker/drosophila-vr-fictrac-360s.git
+cd drosophila-vr-fictrac-360s
 python -m pip install -r requirements.txt
 ```
 
