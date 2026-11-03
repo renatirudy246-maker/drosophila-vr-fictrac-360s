@@ -48,7 +48,7 @@ The physical screen is approximately 4 cm from the fly. `VIRTUAL_WALL_DISTANCE_C
 | `fictrac-2.1.1/` | FicTrac source, build files, documentation, and license |
 | `hardware/` | 27 SolidWorks parts and one top-level assembly |
 
-Outputs are saved to `exp_data/` by default, including experiment CSV files and JSON summaries. Generate analysis plots through the launcher. Experiment data, logs, and the locally installed `fictrac/` runtime folder are excluded from Git.
+Outputs are saved to `exp_data/` by default, including frame-level and state-summary CSV files and a live-status JSON file. Generate analysis plots through the launcher. Experiment data, logs, and the locally installed `fictrac/` runtime folder are excluded from Git.
 
 Hardware models are grouped under `screen_support/`, `ball_holder/`, `circuit_board/`, `camera_mount/`, and `infrared_light/`. The assembly file is [platform_assembly.SLDASM](hardware/platform_assembly.SLDASM). Only filesystem names have been translated; internal CAD references have not been updated, so opening the assembly may require relinking components. Hardware files are optional and are not needed to run the program.
 
